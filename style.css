@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+*{
+    font-family: 'New Tegomin', serif
+}
+
+#searchbox{
+    background-image: url(./search.png); 
+    width: 80vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 12px 15px 12px 55px;
+    border-radius: 10px;
+    border:2px solid black;
+    margin-left: 35px;
+    font-size: 25px;
+    }
+
+    #ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        background-color: #f6f6f6;
+        padding: 15px;
+        /* margin-top: -1px; */
+        display: block
+    }
+    #ul li{
+        list-style-type:none;
+        margin-left: -10px;
+        width: 80vw;
+        border:1px solid #ddd;
+    }
+    h1{
+        text-align: center;
+        animation: 15s linear 0s infinite normal move;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode;
+        animation-direction: ; */
+    }
+
+    @keyframes move {
+        0%,
+        25% {
+          transform: translateX(-70%);
+          left: 0%;
+        }
+        75%,
+        100% {
+          transform: translateX(100%);
+          left: 100%;
+        }
+      }
+
